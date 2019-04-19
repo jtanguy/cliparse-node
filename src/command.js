@@ -149,7 +149,7 @@ command.help = function(context) {
     output += 'Arguments:\n';
     _.each(argumentHelp, function(arg) {
       var padding = new Array(leftColumnWidth - arg[0].length + 1).join(' ');
-      output += arg[0] + padding + arg[1] +'\n';
+      output += '  ' + arg[0] + padding + arg[1] +'\n';
     });
     output += '\n';
   }
@@ -158,7 +158,7 @@ command.help = function(context) {
     output += 'Options:\n';
     _.each(optionsList, function(arg) {
       var padding = new Array(leftColumnWidth - arg[0].length + 1).join(' ');
-      output += arg[0] + padding + arg[1] +'\n';
+      output += '  ' + arg[0] + padding + arg[1] +'\n';
     });
     output += '\n';
   }
@@ -167,7 +167,7 @@ command.help = function(context) {
     output += 'Available Commands:\n';
     _.each(commandsList, function(arg) {
       var padding = new Array(leftColumnWidth - arg[0].length + 1).join(' ');
-      output += arg[0] + padding + arg[1] +'\n';
+      output += '  ' + arg[0] + padding + arg[1] +'\n';
     });
     output += '\n';
   }
